@@ -13,7 +13,9 @@ git push = työnnä requesti git hubiin.
 Konfliktin saa aikaseksi jos teet kaksi pull requestia samasta tekstistä mutta muutaat tekstiä/ poistat sitä. Tee toisella merge jolloin toisesta tulee konflikti 
 koska muutettava teksi on muuttunut ja näin toinen pull requesti ei onnistu.
 
--MongoDB on dokumentti tietokata.
+-MongoDB on dokumentti tietokata. MongoDB:n asennus tästä linkistä https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/
+
+
 -Json on javascript object notation. Se on rakennettu kahdesta rakenteesta.
   * kollaasi nimistä/arvoista pareina. Monissa kielissä tämä on objecti,tallenne,rakenne,sanakirja,ruututaulukko, avain lista tai vastaava järjestetty jono.
   * Järjestetty lista arvoista. Monissa kielissä tämä on järjestetty jono, vektorit, lista tai jono.
