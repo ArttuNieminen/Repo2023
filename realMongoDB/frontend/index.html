@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Human</title>
+    <script src="index.js"></script>
+  </head>
+  <body onload="listPeople()">
+    <h1>Lisää ja katso merkintöjä</h1>
+    <div>
+      <div>
+        <input
+        autocomplete="off"
+        type="text"
+        id="name"
+        value=""
+        placeholder="Anna nimi"
+        onchange= "{(e) => setNewPerson(e.target.value)}"
+          
+          />
+        <button onclick="addPerson(document.getElementById('name').value)">Lisää</button>
+      </div>
+      
+    </div>
+    <div>
+      <input
+        autocomplete="off"
+        type="number"
+        id="luku"
+        value=2
+        min="1" 
+        max="20"
+        onchange= "{(e) => setNewList(e.target.value)}"
+          
+      />
+      <button onclick="teeLista(document.getElementById('luku').value)">Tee lista viimeisimmistä (anna luku)</button>
+      <br><br><br>
+    </div>
+    <div>
+      <input
+      autocomplete="off"
+      type="text"
+      id="nameDelete"
+      value=""
+      placeholder="Anna id"
+      onchange= "{(e) => giveID(e.target.value)}"
+        
+        />
+      <button onclick="DeleteObjectByID(document.getElementById('nameDelete').value)">Poista</button>
+    </div>
+    <input
+      autocomplete="off"
+      type="text"
+      id="nameUpdateID"
+      value=""
+      placeholder="Anna id"
+      onchange= "{(e) => giveID(e.target.value)}"
+        
+        />
+      <input
+        autocomplete="off"
+        type="text"
+        id="newName"
+        value=""
+        placeholder="Anna uusi nimi"
+        onchange= "{(e) => giveName(e.target.value)}"
+          
+          />
+      <button onclick="UpdateObjectNameByID(document.getElementById('nameUpdateID').value,
+      document.getElementById('newName').value )">Päivitä</button>
+    <div>
+      <table >
+        <h2>Lista ihmisistä</h2>
+        <h3>Uusin ensin</h3>
+        <div id="insertDiv">
+        </div>
+      </table>
+    </div>
+  </body>
+</html>
