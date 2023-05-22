@@ -23,4 +23,9 @@ koska muutettava teksi on muuttunut ja näin toinen pull requesti ei onnistu.
 -Json on javascript object notation. Se on rakennettu kahdesta rakenteesta.
   * kollaasi nimistä/arvoista pareina. Monissa kielissä tämä on objecti,tallenne,rakenne,sanakirja,ruututaulukko, avain lista tai vastaava järjestetty jono.
   * Järjestetty lista arvoista. Monissa kielissä tämä on järjestetty jono, vektorit, lista tai jono.
-  
+
+
+# mongoDB
+
+Ideana on rakentaa ohjelma, johon annetaan nimi ja tietokantaan.
+tutustukaa koodiin ja selvittäkää errorit
